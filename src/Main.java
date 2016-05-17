@@ -47,6 +47,7 @@ public class Main {
                 System.exit(0);
             } else {
                 System.out.println("you did not enter a correct value please try again");
+                System.out.println();
             }
         }
 
