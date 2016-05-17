@@ -20,22 +20,23 @@ public class Main {
         String desicison = null;
         int output;
         System.out.println("Please enter 1 for HashTable or 2 for tree structure ");
+
         desicison = mReader.readLine();
         output = Integer.parseInt(desicison);
 
-        while (output != 0) {
+        while (output == 1 || output == 2) {
             if (output == 1) {
                 testCase.addEmployee();
             }
             System.out.println("to add another employee type 1 to search an employee type 2 to remove an employee type 3 to quit type q");
 
             choice = mReader.readLine();
-            output = Integer.parseInt(choice);
-            if (output == 1) {
+            input = Integer.parseInt(choice);
+            if (input == 1) {
                 testCase.addEmployee();
-            } else if (output == 2) {
+            } else if (input == 2) {
                 testCase.searchEmployee();
-            } else if (output == 3) {
+            } else if (input == 3) {
                 output = Integer.parseInt(choice);
                 System.out.println("this is where you would enter the employee you would like to delete");
 
